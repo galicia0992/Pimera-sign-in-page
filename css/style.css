@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap);
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  background-color: #ff7a7a;
+  background-image: url(../images/bg-intro-desktop.png);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+.container .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: white;
+  width: 29rem;
+  height: 25rem;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 6px 7px 1px rgba(0, 0, 0, 0.29);
+          box-shadow: 0px 6px 7px 1px rgba(0, 0, 0, 0.29);
+}
+
+.container .card .name, .container .card .lName, .container .card .email, .container .card .pass {
+  width: 25rem;
+  height: 3.3rem;
+  border-radius: 4px;
+  border: 2px solid whitesmoke;
+  text-align: left;
+  text-indent: 1.5rem;
+}
+
+.container .card .under-button {
+  background-color: #38cc8c;
+  color: white;
+  height: 2.5rem;
+  width: 25rem;
+  border-radius: 4px;
+  border: 2px solid #38cc8c;
+}
+
+.container .card .under-button:hover {
+  background-color: #98ebc7;
+  border: 2px solid #98ebc7;
+  cursor: pointer;
+}
+
+.container .card p {
+  font-size: xx-small;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .card p span {
+  color: red;
+  text-decoration: underline;
+  cursor: pointer;
+  text-indent: 1px;
+}
+
+.container .card p span:hover {
+  color: #f37e7e;
+}
+
+.container .top-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+  background-color: #6055a5;
+  height: 2.6rem;
+  width: 29rem;
+  border-radius: 4px;
+  border: 2px solid #6055a5;
+  -webkit-box-shadow: 0px 6px 7px 1px rgba(0, 0, 0, 0.29);
+          box-shadow: 0px 6px 7px 1px rgba(0, 0, 0, 0.29);
+  color: rgba(255, 255, 255, 0.705);
+  font-weight: 100;
+  font-size: small;
+}
+
+.container .top-button:hover {
+  background-color: #493d8f;
+  border: 2px solid #493d8f;
+  cursor: pointer;
+}
+
+.container .top-button span {
+  color: white;
+  font-weight: 700;
+  font-size: x-small;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.container .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  max-width: 70vh;
+  margin-right: 1rem;
+}
+
+.container .description h1 {
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.container .description p {
+  color: white;
+}
+
+.error {
+  width: 25rem;
+  height: 3.3rem;
+  border-radius: 4px;
+  border: 2px solid red;
+  text-align: left;
+  text-indent: 1.5rem;
+  background-image: url(../images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: 23rem;
+}
+
+.correct {
+  width: 25rem;
+  height: 3.3rem;
+  border-radius: 4px;
+  border: 2px solid #20d120;
+  text-align: left;
+  text-indent: 1.5rem;
+}
+
+.nameErr, .lNameErr, .emailErr, .pwErr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: small;
+  width: 25rem;
+  color: red;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+/*# sourceMappingURL=style.css.map */
